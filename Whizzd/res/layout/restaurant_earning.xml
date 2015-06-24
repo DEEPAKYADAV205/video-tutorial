@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:context=".PostActivity" >
+
+        <RelativeLayout
+            android:id="@+id/post_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/post_layout2"
+            android:layout_marginTop="20dp"
+            android:background="#9ACD32"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/order_edittextlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/name_edittext"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="6"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="none"
+                android:paddingLeft="2dp"
+                android:text="Rs.1732" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/order_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/name_edittext"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/order_edittextlabel"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:text="Prateek Sharma"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:paddingLeft="2dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/amount_edittextlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/order_edittextlabel"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:gravity="center"
+                android:ems="6"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="2dp"
+                android:text="Rs.540" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/amount_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/order_edittext"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/amount_edittextlabel"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="Tarun Sharma"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:paddingLeft="2dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/name_edittextlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="6"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="2dp"
+                android:text="Value"
+                android:textStyle="bold" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/name_edittextlabel"
+                android:background="#D3D3D3"
+                android:clickable="false"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Customer"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"
+                android:paddingLeft="2dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/address_edittextlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/amount_edittextlabel"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="6"
+                android:gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="2dp"
+                android:text="Rs.790" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/amount_edittext"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/address_edittextlabel"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:gravity="center"
+                android:text="Deepak Yadav"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:paddingLeft="2dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/status_edittextlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/address_edittextlabel"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="6"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="2dp"
+                android:gravity="center"
+                android:text="Rs.1200" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/status_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/address_edittext"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/status_edittextlabel"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="Udit Kumar Paul"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:paddingLeft="2dp" >
+            </EditText>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/delivered_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/post_layout1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/round2"
+            android:text="Return" />
+
+        <RelativeLayout
+            android:id="@+id/post_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9ACD32"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:id="@+id/buttonlinear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <EditText
+                    android:id="@+id/te_edittextlabel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#D3D3D3"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:text="Today&apos;s Earning"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tde_edittextlabel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#D3D3D3"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:text="Till Date Earning"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonlinear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonlinear1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <EditText
+                    android:id="@+id/te_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Rs. 547"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textMultiLine"
+                    />
+
+                <EditText
+                    android:id="@+id/tde_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Rs.17457"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textMultiLine"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

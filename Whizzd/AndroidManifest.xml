@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="delivery.dummyorder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="delivery.dummyorder.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--
+     The following permission is not required to use
+     Google Maps Android API v2, but is recommended.
+    -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="delivery.dummyorder.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcherlogo"
+        android:label="Delivery Track"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RingAlarm"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".DeliveryAlarm"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DispatchActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ResturantSignup"
+            android:label="Signup" >
+        </activity>
+        <activity
+            android:name=".SingleItemView"
+            android:label="Order Details" >
+        </activity>
+        <activity
+            android:name="com.example.android.wizardpager.MainActivity"
+            android:label="Login Details" >
+        </activity>
+        <activity
+            android:name="delivery.dummyorder.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCkxmxqGeATc88D0YRO-7wor1CZc0_3IeA" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="delivery.dummyorder.ParseLoginActivity"
+            android:label="Login " 
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name=".DigitalSign"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Res"
+            android:label="Resturant" >
+        </activity>
+        <activity
+            android:name=".Delivered"
+            android:label="Delivered Orders" >
+        </activity>
+        <activity
+            android:name=".AgentFeedbackActivity"
+            android:label="FeedBack" >
+        </activity>
+        <activity
+            android:name=".AgentHomeActivity"
+            android:label="Agent" >
+        </activity>
+        <activity
+            android:name=".DeliveredItemView"
+            android:label="Delivered Orders" >
+        </activity>
+        <activity
+            android:name=".ResMap"
+            android:label="Resturant" >
+        </activity>
+        <activity
+            android:name=".SignatureMAinLayout"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AgencyHomeActivity"
+            android:label="Agency " >
+        </activity>
+        <activity
+            android:name=".AgencyDPAvailabilityActivity"
+            android:label="Agency " >
+        </activity>
+        <activity
+            android:name=".AgencyTodayOrderActivity"
+            android:label="Orders" >
+        </activity>
+        <activity
+            android:name=".AgencyPendingDeliveryActivity"
+            android:label="Pending Picup Orders" >
+        </activity>
+        <activity
+            android:name=".AgencyPendingDeliveryActivity"
+            android:label="Pending Picup Orders" >
+        </activity>
+        <activity
+            android:name=".RestaurantFeedbackActivity"
+            android:label=" Feedback" >
+        </activity>
+        <activity
+            android:name="com.example.android.wizardpager.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Details"
+            android:label="Order Details " >
+        </activity>
+        <activity
+            android:name=".PendingPickedupOrder"
+            android:label="Pending pickup orders " >
+        </activity>
+        <activity
+            android:name=".PendingPickedupItemView"
+            android:label="Pending pickup order " >
+        </activity>
+        <activity
+            android:name="delivery.dummyorder.SignUpActivity"
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewMealActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".MealListActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".FacebookGoogleLoginActivity"
+            android:label="Delivery Track" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddAgent"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".PostOrders"
+            android:label="Order" >
+        </activity>
+        <activity
+            android:name=".FreeLancer"
+            android:label="Signup" >
+        </activity>
+        <activity
+            android:name="delivery.dummyorder.WelcomeActivity"
+            android:label="Delivery Track "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="delivery.dummyorder.PostActivity"
+            android:label="@string/activity_post_title"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="delivery.dummyorder.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".DT_AgentGPS"
+            android:label="Agent" >
+        </activity>
+        <activity
+            android:name=".DT_SupervisorMain"
+            android:label="Supervisor" >
+        </activity>
+        <activity
+            android:name=".JSONParser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="Agent" >
+        </activity>
+        <activity
+            android:name=".DeliveredOrders"
+            android:label="Orders Delivered" >
+        </activity>
+        <activity
+            android:name=".DeliveredItemView1"
+            android:label="Orders Delivered" >
+        </activity>
+        <activity
+            android:name=".PendingOrders"
+            android:label="Orders Pending" >
+        </activity>
+        <activity
+            android:name=".PendingPickedupOrders"
+            android:label="Orders Pending Pickedup " >
+        </activity>
+        <activity
+            android:name=".PendingItemView"
+            android:label="Orders Pending" >
+        </activity>
+        <activity
+            android:name=".PendingPickedupItemView"
+            android:label="Orders Pending pickedup" >
+        </activity>
+        <activity
+            android:name=".Signin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SupervisorMapActivity"
+            android:label="Supervisor" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.android.wizardpager1.MainActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SingleMarker"
+            android:label="Supervisor" >
+        </activity>
+        <activity
+            android:name=".DT_AgentMain"
+            android:label="Agent" >
+        </activity>
+        <activity
+            android:name=".OrderDetails"
+            android:label=" Orders" >
+        </activity>
+        <activity
+            android:name=".AgentOrdersAvailableActivity"
+            android:label=" Orders Available" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name="com.matesnetwork.cogdemov2.MainActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.matesnetwork.Cognalys.VerifyMobile"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.matesnetwork.cogdemov2.Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+
+        <receiver android:name="com.matesnetwork.cogdemov2.CognalysVerification" >
+            <intent-filter>
+                <action android:name="com.matesnetwork.cognalys" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

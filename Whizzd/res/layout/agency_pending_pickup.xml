@@ -1,0 +1,505 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <ScrollView android:id="@+id/order_delivery_scrollview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/order_delivery_layout"
+        android:layout_above="@+id/order_delivery_button_layout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/order_delivery_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill">
+
+            <RelativeLayout
+                android:id="@+id/order_delivery_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9ACD32"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#D3D3D3"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:paddingLeft="2dp"
+                        android:text="Name"
+                        android:textStyle="bold" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#D3D3D3"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:paddingLeft="2dp"
+                        android:text="Pickup @"
+                        android:textStyle="bold" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#D3D3D3"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="ETA"
+                        android:textStyle="bold" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#D3D3D3"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="Pending"
+                        android:textStyle="bold" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear1"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name1_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:paddingLeft="2dp"
+                        android:text="Mr. Udit Kumar Paul" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name1_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="Okhla Phase 2" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta1_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="15 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending1_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="20 mins" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear2"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name2_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:paddingLeft="2dp"
+                        android:text="Jitesh Shah" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name2_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:paddingLeft="2dp"
+                        android:text="New Ashok Nagar" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta2_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="45 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending2_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="15 mins" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear3"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name3_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="Deepak Yadav"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name3_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Mayur Vihar Extension"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta3_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="75 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending3_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="60 mins" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear4"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name4_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="Mahesh Bansal"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name4_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Uttam Nagar"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta4_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="120 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending4_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="20 mins" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear5"
+                    android:orientation="horizontal"
+                    android:background="#9ACD32"
+                    android:paddingBottom="1dp"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name5_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="Bijay Swain"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name5_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Mamura Chowk"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta5_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="30 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending5_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="30 mins" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_delivery_linear7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_delivery_linear6"
+                    android:orientation="horizontal"
+                    android:weightSum="5" >
+
+                    <EditText
+                        android:id="@+id/name6_edittextlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="Prateek Sharma"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/name6_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.5"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Greater Noida"
+                        android:inputType="none"
+                        android:paddingLeft="2dp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eta6_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="10 mins" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pending6_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="25 mins" >
+                    </EditText>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/agent_pending_pickup_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#51000000"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/agent_pending_pickup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="6"
+            android:background="@drawable/round3"
+            android:text="Return" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_delivery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/order_delivered_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Orders Pending Pickup"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

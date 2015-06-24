@@ -1,0 +1,158 @@
+<!--
+  Copyright 2013 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WizardPageContainer">
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/label_your_name" />
+
+            <EditText android:id="@+id/your_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_your_name"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/label_your_email" />
+
+            <EditText android:id="@+id/your_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="textEmailAddress"
+                android:hint="enter your email" 
+                  android:layout_marginBottom="16dp"/>
+               <TextView style="@style/WizardFormLabel"
+                android:text="Password" />
+
+            <EditText android:id="@+id/your_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your password" 
+                  android:layout_marginBottom="16dp"/>
+            <TextView style="@style/WizardFormLabel"
+                android:text="confirm Password" />
+
+            <EditText android:id="@+id/your_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your password again" 
+                  android:layout_marginBottom="16dp"/>
+              <TextView style="@style/WizardFormLabel"
+                android:text="UserNAme" />
+
+            <EditText android:id="@+id/your_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your username" 
+                  android:layout_marginBottom="16dp"/>
+              <TextView style="@style/WizardFormLabel"
+                android:text="phone number" />
+
+            <EditText android:id="@+id/your_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="number"
+                android:hint="phone number"
+                android:layout_marginBottom="16dp" />
+             <TextView style="@style/WizardFormLabel"
+                android:text="Alternate Phone Number" />
+
+            <EditText android:id="@+id/your_alternatenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="number"
+                android:hint="alternate phone number" 
+                android:layout_marginBottom="16dp"/>
+             <TextView style="@style/WizardFormLabel"
+                android:text="Resturant name" />
+
+            <EditText android:id="@+id/your_resturant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType=
+                "text"
+                android:hint="enter your resturant"
+                android:layout_marginBottom="16dp" />
+              <TextView style="@style/WizardFormLabel"
+                android:text="Supervisor Name" />
+
+            <EditText android:id="@+id/your_supervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your supervisor name"
+                android:layout_marginBottom="16dp" />
+                <TextView style="@style/WizardFormLabel"
+                android:text="Area" />
+
+            <EditText android:id="@+id/your_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter area you want"
+                android:layout_marginBottom="16dp" />
+             <TextView style="@style/WizardFormLabel"
+                android:text="Address" />
+
+            <EditText android:id="@+id/your_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your address"
+                android:layout_marginBottom="16dp" />
+             <TextView style="@style/WizardFormLabel"
+                android:text="Branch" />
+
+            <EditText android:id="@+id/your_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="enter your branch"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

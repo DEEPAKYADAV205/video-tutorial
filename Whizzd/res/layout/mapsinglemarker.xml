@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginTop="7dp"
+        android:background="#FFFFFF" >
+
+        <!-- 2 columns -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#808080"
+                android:text="Order Details"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Mr.ABCD "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="2 VEG "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Rs.250"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Mr.ABCD "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="2 VEG "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Rs.250"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Mr.ABCD "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="2 VEG "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Rs.250"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Mr.ABCD "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="2 VEG "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:text="Rs.250"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="#808080"
+                android:onClick="onMore"
+                android:text="More..."
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

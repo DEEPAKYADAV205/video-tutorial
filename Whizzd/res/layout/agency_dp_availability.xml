@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:id="@+id/order_delivery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/order_delivered_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="DP : Availability"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textlinear1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:gravity="center"
+        android:padding="10dp"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/sublinearpost1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="On Road" />
+
+            <EditText
+                android:id="@+id/tde_edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Available" />
+
+            <EditText
+                android:id="@+id/tde_edittext3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Not Available" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="32" />
+
+            <EditText
+                android:id="@+id/tde_edittext22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="17" />
+
+            <EditText
+                android:id="@+id/tde_edittext33"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="22" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="6"
+            android:id="@+id/agency_dp_availability_return_button"
+            android:text="Return"
+            android:background="@drawable/round3"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+</LinearLayout>

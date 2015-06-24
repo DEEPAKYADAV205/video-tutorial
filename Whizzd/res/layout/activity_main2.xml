@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmain"
+    tools:context="com.matesnetwork.Cognalys.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_launcherlogo" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/test"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editText2"
+        android:ems="10"
+        android:phoneNumber="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/test"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:phoneNumber="true" />
+
+    
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/linearlayout_bg"
+        android:text="Enter your mobile number"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+</RelativeLayout>

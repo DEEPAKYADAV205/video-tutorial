@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search Widget -->
+   
+
+    
+    <!-- Refresh -->
+    <item android:id="@+id/action_refresh"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="@string/action_refresh" 
+          android:showAsAction="never" />
+    
+    <!-- Help -->
+    <item android:id="@+id/action_help"
+          android:icon="@drawable/ic_action_help"
+          android:title="@string/action_help" 
+          android:showAsAction="never"/>
+     <item android:id="@+id/action_add"
+          android:icon="@drawable/ic_action_add_person"
+          android:title="@string/action_add" 
+          android:showAsAction="ifRoom"/>
+     <item android:id="@+id/changepassword"
+          
+          android:title="@string/changepassword" 
+          android:showAsAction="never"/>
+    
+    <!-- Check updates -->
+    <item android:id="@+id/action_check_updates"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="@string/action_check_updates"
+          android:showAsAction="never" />
+       <item android:id="@+id/action_check_settings"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="@string/action_settings"
+          android:showAsAction="never" />
+</menu>

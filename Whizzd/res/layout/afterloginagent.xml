@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mapbg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_submitnumber"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:background="@drawable/linearlayout_bg"
+        android:onClick="submit_Number"
+        android:text="Submit"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linearlayout_bg"
+        android:text="Please Enter Your Mobile Number"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button_submitnumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/linearlayout_bg1"
+         android:drawableLeft="@drawable/ic_action_end_call"
+        android:ems="10"
+        android:hint=" 9999999999"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

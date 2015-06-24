@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/return_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/agency_pickup_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Orders Pending Pickup"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textlinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_layout4"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:id="@+id/sublinearpost1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Total" />
+
+            <EditText
+                android:id="@+id/tde_edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick=""
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext11"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Oldest" />
+
+            <EditText
+                android:id="@+id/tde_edittext22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick=""
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Prateik\n50 mins" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/return_layout5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textlinear1"
+        android:layout_marginTop="40dp"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/agency_delivery_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Orders Pending Delivery"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textlinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_layout5"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:id="@+id/sublinearpost11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext01"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Total" />
+
+            <EditText
+                android:id="@+id/tde_edittext02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick=""
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext011"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Oldest" />
+
+            <EditText
+                android:id="@+id/tde_edittext022"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:onClick=""
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Udit \n 75 mins" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutpostbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/agency_dp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/agency_button"
+            android:background="@drawable/round3"
+            android:text="DP \n Available" />
+
+        <Button
+            android:id="@+id/agency_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:text="" />
+
+        <Button
+            android:id="@+id/agency_order_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"            
+            android:layout_toRightOf="@+id/agency_button"
+            android:background="@drawable/round3"
+            android:text="Today&apos;s \n Order" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/agenttrack"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/layoutpostbutton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round2"
+        android:text="Track Agents" />
+
+</RelativeLayout>

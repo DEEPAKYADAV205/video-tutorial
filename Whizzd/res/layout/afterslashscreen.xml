@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mapbg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="492dp" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editText1_username"
+            android:layout_below="@+id/editText2_password"
+            android:layout_marginTop="37dp" >
+
+            <RadioButton
+                android:id="@+id/radioSuperviser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Superviser"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioSuperviser"
+                android:layout_below="@+id/radioSuperviser"
+                android:text="Agent"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/radiogroup"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/round2"
+            android:onClick="loginOnClick"
+            android:text="Login"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editText1_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/round2"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/radiogroup"
+            android:layout_below="@+id/editText1_username"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round2"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1_username"
+            android:layout_alignTop="@+id/radiogroup"
+            android:text="Login As"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/button2_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonLogin"
+            android:layout_alignBottom="@+id/buttonLogin"
+            android:layout_alignRight="@+id/radiogroup"
+            android:background="@drawable/round2"
+            android:onClick="registerOnClick"
+            android:text="Register"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,389 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/return_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/pickup_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="Feedback: Delivery Boy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textlinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_layout4"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/sublinearpost1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/tde_edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Deepak" />
+
+            <EditText
+                android:id="@+id/tde_edittext3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Prateik" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Rating" />
+
+            <EditText
+                android:id="@+id/tde_edittext22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="3" />
+
+            <EditText
+                android:id="@+id/tde_edittext33"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext111"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Comment" />
+
+            <EditText
+                android:id="@+id/tde_edittext222"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Late" />
+
+            <EditText
+                android:id="@+id/tde_edittext333"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="On Time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:id="@+id/sublayoutpost1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/see_return_button1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#7CFC00"
+                    android:text="See All"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/return_layout5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textlinear1"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/delivery_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="Feedback: Food"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textlinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_layout5"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/sublinearpost11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/tde_edittext02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"                
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Biryani" />
+
+            <EditText
+                android:id="@+id/tde_edittext03"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"                
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Pizza" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext011"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="Rating" />
+
+            <EditText
+                android:id="@+id/tde_edittext022"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="4.5" />
+
+            <EditText
+                android:id="@+id/tde_edittext033"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="3.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <EditText
+                android:id="@+id/tde_edittext0111"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#D3D3D3"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="Comment" />
+
+            <EditText
+                android:id="@+id/tde_edittext0222"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"                
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Delicious" />
+
+            <EditText
+                android:id="@+id/tde_edittext0333"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Spicy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sublinearpost44"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:id="@+id/sublayoutpost2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/see_return_button2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#7CFC00"
+                    android:text="See All"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutpostbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/restaurant_feedback_return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="     Return     " />
+
+    </RelativeLayout>
+
+</RelativeLayout>

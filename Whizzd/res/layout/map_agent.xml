@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MapActivity" >
+
+    <TextView 
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+	<fragment
+		android:id="@+id/map"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:layout_marginBottom="80dp"
+	  	android:layout_below="@id/tv_location"
+	  	class="com.google.android.gms.maps.SupportMapFragment"
+	  	/>
+	<Button
+	    android:id="@+id/order"
+	    android:layout_width="0dp"
+	    android:layout_height="55dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_toLeftOf="@+id/midview"
+	    android:ems="5"
+	    android:gravity="center"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginBottom="18dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@drawable/round2"
+	    android:text="Orders Pending" />
+	
+	<Button android:id="@+id/midview"
+	    android:layout_height="55dp"
+	    android:layout_width="wrap_content"
+	    android:ems="5"
+	    android:layout_marginBottom="18dp"
+  	    android:background="@drawable/round2"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="Return"/>
+
+	<Button
+	    android:id="@+id/order1"
+	    android:layout_width="0dp"
+	    android:layout_height="55dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@+id/midview"
+	    android:gravity="center"
+	    android:ems="5"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginBottom="18dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/round2"
+	    android:text="Orders Delivered" />
+	
+</RelativeLayout>
